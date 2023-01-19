@@ -1,0 +1,247 @@
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" type="momentedivine/jpg" href="C:\Users\Adina\OneDrive\Desktop\An3\PIUG\assets\img\momentedivine.jpg">
+    <link rel="stylesheet" href="assets\css\carousel.css">
+	  <link rel="stylesheet" href="assets\css\footer.css">
+	  <style>
+	#faq{
+  display: flex;
+  
+  align-items: center;
+	justify-content: center;
+  
+	width: 100%;
+	min-height: 100vh;
+}
+
+#faq .add{ /*Add is the name for the plus icon*/
+	display: block;
+}
+
+#faq .remove{ /*Remove is the name for the less icon*/
+	display: none;
+}
+
+#faq i{ 
+	font-size: 30px;
+}
+
+/*Accordion container and each item*/
+.accordion{
+	max-width: 800px;
+  
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}	
+
+.accordion-item{
+	background-color: transparent;
+  border-bottom: 3px solid #DCDCDC;
+  
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+/*Styles for the question*/
+
+.accordion-title{
+  display: flex;
+  
+  align-items: center;
+	justify-content: space-around;
+  
+	color: black;
+	font-size: 18px;
+  font-family: Open Sans;
+  font-weight: 600;
+  
+	width: 100%;
+	padding: 1rem 0;
+	cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.accordion-title:hover{
+  color:#808080;
+}
+
+.accordion-title h2{
+	width: 80%;
+}
+
+/*Styles for the answer*/
+
+.accordion-content{
+  max-height: 0;
+  overflow: hidden;
+	position: relative;
+	
+  transition: max-height 0.6s;
+  font-family: Open Sans;
+  font-weight: 400;
+}
+
+.accordion-content p{
+  padding: 20px;
+	color: white;
+}
+</style>
+	  </head>
+<body>
+
+ <div class="m-4" style="margin-top: 0!important;" >
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark" href="#">
+                    <img src="assets/img/" alt="" width="" height="" class="d-inline-block align-text-top text-secondary">
+                  </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">Acasa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portofoliu.html" class="nav-link">Portofoliu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="despre.html" class="nav-link">Despre</a>
+                        
+                                     
+                           <li class="nav-item">
+                            <a href="Contact.html" class="nav-link">Contact</a>
+                        </li>
+						             
+                           <li class="nav-item">
+                            <a href="ajutor.html" class="nav-link">Ajutor</a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                           <form class="d-flex input-group w-auto">
+                      <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"aria-describedby="search-addon  " />
+                       <span class="input-group-text border-0" id="search-addon">
+                      <i class="fas fa-search"></i>
+                        </span>
+                        </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
+    </div>
+	<br>
+	<br>
+<section id="faq" width="100%" height="auto">
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title">
+          <h2>Cum comand?</h2>
+          <i class="material-icons add">+</i>
+          <i class="material-icons remove">-</i>
+        </div>
+         <div class="accordion-content">
+            <p><font size="7" face="Georgia, Arial" color="	black">P</font><font color="black">entru comenzile de aranjamente florale, va rugam sa mergeti in pagina de contact si in chenarul pentru mesaj sa ne lasati detalii despre produsul dorit iar noi vom reveni pe email cu niste sugestii.<br>Va multumim!</font></p>
+         </div>
+       </div>
+       <div class="accordion-item">
+        <div class="accordion-title">
+          <h2>Cum platesc?</h2>
+          <i class="material-icons add">+</i>
+          <i class="material-icons remove">-</i>
+        </div>
+        <div class="accordion-content">
+          <p><font size="7" face="Georgia, Arial" color="	black">P</font><font color="black">lata produselor comandate se poate face prin ordin de plata sau ramburs la livrare</font></p>
+        </div>
+       </div>
+       <div class="accordion-item">
+         <div class="accordion-title">
+            <h2>Despre organizarea unui eveniment</h2>
+            <i class="material-icons add">+</i>
+            <i class="material-icons remove">-</i>
+          </div>
+          <div class="accordion-content">
+             <p><font size="7" face="Georgia, Arial" color="	black">D</font><font color="black">aca doriti sa colaboram pentru un evenimenet, va rugam sa mergeti in pagina de contact si in chenarul pentru mesaj sa ne lasati detalii despre evenimenetul dumneavoastra(tipul de eveniment, data si ora, locatia) iar noi vom reveni cu un email pentru a stabili o intalnire cu dumneavoastra, in conditiile in care suntem disponibili la data aleasa pentru eveniment.<font></p>
+          </div>
+        </div>
+		<div class="accordion-item">
+         <div class="accordion-title">
+            <h2>Utilizarea site-ului</h2>
+            <i class="material-icons add">+</i>
+            <i class="material-icons remove">-</i>
+          </div>
+          <div class="accordion-content">
+             <p><font size="7" face="Georgia, Arial" color="	black">S</font><font color="black">ite-ul nostru este usor de utilizat de catre oricine, dar pentru a face vizita pe site si mai usoara avem niste sugestii pentru dumnevoastra:<br>
+			 - pentru a vedea ce tip de servicii oferim va rugam sa accesati cele trei pagini("Design de Evenimente", " Aranjamente florale", "Organizare evenimente") din partea de jos a paginii "Acasa"<br>
+			 - pentru a vedea cateva din produsele noastre puteti accesa pagina "Portofoliu", unde va sunt puse la dispozitie cateva imagini si un video, dar de asemenea ne puteti vizita si paginile de pe site-urile de socializare cu un singur click pe butoanele specifice fiecarei platforme aflte in subsolul fiecarei paginii<br>
+			 - in pagina "Despre" gasiti cateva detalii despre proiectul Momente Divine si echipa sa<br>
+			 -pentru a ne contacta va asteptam in pagina "Contact", unde gasiti datele nostre, sau o puteti face prin formularul ce va sta la dispozitie in aceeasi pagina. De asemenea in pagina "Contact" gasiti si indicatii catre adresa sediului noastru.
+			 </font><p>
+          </div>
+        </div>
+		<div class="accordion-item">
+         <div class="accordion-title">
+            <h2>Alte intrebari..</h2>
+            <i class="material-icons add">+</i>
+            <i class="material-icons remove">-</i>
+          </div>
+          <div class="accordion-content">
+             <p><font size="7" face="Georgia, Arial" color="black">P</font><font color="black">entru alte intrebari nu ezitati sa ne contactati direct pe adresa de email contact@gmail.com sau la numarul de telefon 0712345678.</font><br>
+			 <i><font size="7" face="Georgia, Arial" color="	black">N</font><font color="black">u uitati, sunteti la un click distanta de evenimentul perfect!</i><font</p>
+          </div>
+        </div>
+    </div>
+	
+
+    <script src="script.js"></script>
+    </section>
+<footer>
+</a>
+
+  <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/MomenteDivine/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://twitter.com/momentedivine?fbclid=IwAR1hBG4V2w-gt8ypq9qPoCbYWjPezrG_n374fbTrLZ_jJGjVCDgftitILWI" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/user/momentedivine" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/momentedivine.ro/?fbclid=IwAR0W8lrDdN5wkHVgm8243e8za-KqlMABkJkc22OmYqM2224ftl2VNXy7GoY" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+</footer> 
+<script>
+const questions = document.getElementsByClassName('accordion-title')//Gets all the questions (plus icon)
+
+for (const question of questions) {
+  const answer = question.parentElement.querySelector('.accordion-content')
+  const remove = question.parentElement.querySelector(".remove")
+  const add = question.parentElement.querySelector(".add")
+  let open = false //Variable to check if the answer is visible or not
+
+  function openAnswer() {
+    if (open == true) { //If you click the question while the answer is visible it will stop being visible and open will change it's value to false
+      add.style.display = "block";
+      remove.style.display = "none";
+      answer.style.overflow = "hidden";
+      answer.style.maxHeight = '0';
+      open = false; 
+    } else { //If you click the question while the answer is not visible it will start being visible and open will change it's value to true
+      add.style.display = "none";
+      remove.style.display = "block";
+      answer.style.maxHeight = "300px";
+      answer.style.overflow = "visible";
+      open = true;
+    }
+  }
+
+  question.addEventListener('click', openAnswer) 
+}
+</script>
+</body>
+</html>
